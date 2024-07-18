@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Stream - Series</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-dark text-white">
+    <div class="container-fluid">
+        <div class="row align-items-center py-3">
+            <div class="col-md-2">
+                <h1 class="logo">Marvel Stream</h1>
+            </div>
+            <div class="col-md-6">
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Series</a></li>
+                        <li class="nav-item"><a href="movie.html" class="nav-link">Movies</a></li>
+                        <li class="nav-item"><a href="new-popular.html" class="nav-link">New & Popular</a></li>
+                        <li class="nav-item"><a href="my-list.html" class="nav-link">My List</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-4 text-right">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-danger" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <button class="btn btn-danger ml-3" onclick="openSignInModal()">Sign In</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Series Section -->
+<section class="series py-5">
+    <div class="container-fluid">
+        <h2 class="text-white">Popular Series</h2>
+        <div class="row">
+            <!-- Series Item -->
+            <div class="col-md-2">
+                <img src="images/series1.jpg" alt="Series 1" class="img-fluid">
+                <p class="text-white">Series Title 1</p>
+            </div>
+            <!-- Repeat Series Item for more series -->
+            <div class="col-md-2">
+                <img src="images/series2.jpg" alt="Series 2" class="img-fluid">
+                <p class="text-white">Series Title 2</p>
+            </div>
+            <div class="col-md-2">
+                <img src="images/series3.jpg" alt="Series 3" class="img-fluid">
+                <p class="text-white">Series Title 3</p>
+            </div>
+            <div class="col-md-2">
+                <img src="images/series4.jpg" alt="Series 4" class="img-fluid">
+                <p class="text-white">Series Title 4</p>
+            </div>
+            <div class="col-md-2">
+                <img src="images/series5.jpg" alt="Series 5" class="img-fluid">
+                <p class="text-white">Series Title 5</p>
+            </div>
+            <div class="col-md-2">
+                <img src="images/series6.jpg" alt="Series 6" class="img-fluid">
+                <p class="text-white">Series Title 6</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>About Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula dui ut magna venenatis, at vehicula dui ultrices.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Contact</h5>
+                <p>Email: support@marvelstream.com</p>
+                <p>Phone: +123-456-7890</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Follow Us</h5>
+                <p>
+                    <a href="#" class="text-white"><i class="fab fa-facebook"></i> Facebook</a><br>
+                    <a href="#" class="text-white"><i class="fab fa-twitter"></i> Twitter</a><br>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i> Instagram</a>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <p>
+                    <a href="#" class="text-white">Privacy Policy</a><br>
+                    <a href="#" class="text-white">Terms of Service</a><br>
+                    <a href="#" class="text-white">FAQ</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                &copy; 2024 Marvel Stream. All rights reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Sign In Modal -->
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-danger">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function openSignInModal() {
+        $('#signInModal').modal('show');
+    }
+</script>
+</body>
+</html>
